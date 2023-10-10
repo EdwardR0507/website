@@ -1,15 +1,15 @@
 const International = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
-    fill="none"
+    width={24}
+    height={24}
+    fill="fff"
     viewBox="0 0 32 32"
     {...props}
   >
     <g clipPath="url(#a)">
       <path
-        stroke="#000"
+        stroke="#fff"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth={2}

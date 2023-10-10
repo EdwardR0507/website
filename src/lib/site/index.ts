@@ -3,7 +3,7 @@ const BASE_URL = "http://localhost:3000";
 export const siteConfig = {
   name: "Edward Ramos",
   description:
-    "Hi, welcome to my digital space. Here I share my side projects, tutorials & what I learn over time. I am looking to grow my career in tech 🚀",
+    "Explore my digital space where I showcase side projects and share my ongoing tech journey. Join me as I strive to propel my career to new heights. 🚀 #TechPortfolio",
   url: BASE_URL,
   links: {
     twitter: "https://twitter.com/EdRamosV",

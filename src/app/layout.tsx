@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `${siteConfig.name} | %s`,
   },
   description: siteConfig.description,
-  keywords: [],
+  keywords: ["Edward Ramos", "EdwardR0507", "Tech", "Web Development"],
   authors: [
     {
       name: "Edward Ramos",
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: siteConfig.name,
     description: siteConfig.description,
-    // images: [`${siteConfig.url}/images/og.png`],
     creator: "@EdRamosV",
   },
   icons: {
@@ -40,7 +39,6 @@ export const metadata: Metadata = {
     shortcut: "/favicon/favicon-16x16.png",
     apple: "/favicon/apple-touch-icon.png",
   },
-  // manifest: `${siteConfig.url}/favicon/site.webmanifest`,
 };
 
 export default function RootLayout({
