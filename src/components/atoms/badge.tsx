@@ -3,7 +3,7 @@ import { cva, type VariantProps } from "class-variance-authority";
 
 import { cn } from "@/lib/utils";
 
-const rawBadgeVariants = {
+export const rawBadgeVariants = {
   default:
     "bg-blue-100 shadow-lg shadow-blue-400/20 dark:bg-blue-200 text-blue-500 dark:text-blue-800",
   green:
@@ -31,16 +31,6 @@ export interface BadgeProps
     VariantProps<typeof badgeVariants> {
   text: string;
 }
-
-export const getBadgeVariant = (type: string) => {
-  const variantMap: Record<string, keyof typeof rawBadgeVariants> = {
-    Personal: "default",
-    "Open Source": "purple",
-    College: "yellow",
-    Work: "green",
-  };
-  return variantMap[type] ?? "default";
-};
 
 export const Badge = ({ text, className, variant, ...props }: BadgeProps) => {
   return (
