@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { Karla as FontKarla } from "next/font/google";
 
-import "./globals.css";
+import { Header, Navbar } from "@/components/molecules";
 import { siteConfig } from "@/lib/site";
+import { cn } from "@/lib/utils";
+import "./globals.css";
 
 export const fontKarla = FontKarla({
   weight: ["400", "700"],
@@ -48,7 +50,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={fontKarla.className}>{children}</body>
+      <body
+        className={cn(
+          "max-w-[1440px] m-auto bg-custom-background",
+          fontKarla.className
+        )}
+      >
+        <>
+          <Header />
+          <main className="p-4">{children}</main>
+          <Navbar />
+        </>
+      </body>
     </html>
   );
 }
