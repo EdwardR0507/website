@@ -1,3 +1,10 @@
+import { ExperienceSection, PersonalInfoSection } from "@/components/organisms";
+
 export default function About() {
-  return <h1>About</h1>;
+  return (
+    <>
+      <PersonalInfoSection />
+      <ExperienceSection />
+    </>
+  );
 }

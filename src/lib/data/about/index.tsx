@@ -5,7 +5,7 @@ export const PERSONAL_INFO = {
   introduction:
     "Hello! My name is Edward, I'm a software engineer based in Lima, Peru. Specialized in frontend development. Currently, I work as a Junior Frontend Developer, where I approach every project with enthusiasm and a commitment to excellence, thriving in the fast-paced world of web development, seeing challenges as opportunities to expand my skill set and create a meaningful impact. Let's shape the digital world together, one line of code at a time!",
   photo: {
-    src: "/Edward.jpg",
+    src: "/images/Edward.jpg",
     alt: "Edward Ramos",
   },
   socialMedia: {
@@ -34,8 +34,8 @@ export const EXPERIENCE_INFO = [
     startDate: "June 2022",
     endDate: "Present",
     responsibilities: [
-      "Develop medium size features from scratch using React, TypeScript, Styled Components, and Apollo.",
-      "Develop small size features from using Dart, Flutter, and GetX.",
+      "Develop medium size features from scratch using React, TypeScript, Styled Components, and Apollo Client.",
+      "Develop small size features from scratch using Dart, Flutter Web, and GetX.",
       "Discuss and propose solutions to improve the product and the development process.",
       "Teach and mentor new trainees developers.",
     ],
