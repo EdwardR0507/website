@@ -19,7 +19,7 @@ export const projects = [
     title: "Crafter Station",
     description:
       "Crafter Station is a Web Development Agency & Open Source Organization that offers services such as Web Development, Web Design, SEO, and more.",
-    image: "/Crafter-station.png",
+    image: "/images/Crafter-station.png",
     type: "Open Source",
     repo: "https://github.com/crafter-station/website",
     website: "https://www.crafter-station.com/",
@@ -47,7 +47,7 @@ export const projects = [
     title: "Memora Date",
     description:
       "Memora Date offers a simple list of reminders, one-time or recurring events, and the ability to import contacts. Email alerts keep you on track.",
-    image: "/Memora-date.png",
+    image: "/images/Memora-date.png",
     type: "Open Source",
     repo: "https://github.com/Railly/memora-date",
     website: "https://memora-date.vercel.app/",
@@ -72,10 +72,66 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Kisaragi",
+    description:
+      "KIsaragi is a web application that allows small shops to create their own space on the web and offer their products to customers.",
+    image: "/images/Kisaragi.png",
+    type: "College",
+    repo: "https://github.com/EdwardR0507/kisaragi-front",
+    // website: "",
+    stack: [
+      {
+        tech: "MaterialUI",
+        icon: () => <Icon name={ETech.MaterialUI} />,
+      },
+      {
+        tech: "TypeScript",
+        icon: () => <Icon name={ETech.TypeScript} />,
+      },
+      {
+        tech: "ReactJS",
+        icon: () => <Icon name={ETech.ReactJS} />,
+      },
+      {
+        tech: "NextJS",
+        icon: () => <Icon name={ETech.NextJS} />,
+      },
+      {
+        tech: "Jest",
+        icon: () => <Icon name={ETech.Jest} />,
+      },
+    ],
+  },
+  {
+    id: 4,
+    title: "Pets World Mobile",
+    description:
+      "Version mobile of Pets World, a web application that allows you to find your lost pet. This version include an IA that allows you to identify the breed of the lost pet.",
+    image: "/images/Pets-world-mobile.png",
+    type: "College",
+    repo: "https://github.com/EdwardR0507/Pets-world-flutter",
+    // website: "",
+    stack: [
+      {
+        tech: "Dart",
+        icon: () => <Icon name={ETech.Dart} />,
+      },
+      {
+        tech: "Flutter",
+        icon: () => <Icon name={ETech.Flutter} />,
+      },
+      {
+        tech: "GetX",
+        icon: () => <Icon name={ETech.GetX} />,
+      },
+    ],
+  },
+  {
+    id: 5,
     title: "Beifong",
     description:
       "Beifong is an application that allows medical establishments to quickly and easily create a system for managing appointments. Also has a focus on accessibility providing accessibility options for the visually impaired.",
-    image: "/Beifong.png",
+    image: "/images/Beifong.png",
     type: "College",
     repo: "https://github.com/EdwardR0507/beifong-front",
     // website: "",
@@ -99,12 +155,12 @@ export const projects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     title: "Pets World",
     description:
       "Pets World is a web application that allows you to find your lost pet. We seek to form a responsible and committed community in order to make those who have no voice heard.",
 
-    image: "/Pets-world.png",
+    image: "/images/Pets-world.png",
     type: "College",
     repo: "https://github.com/EdwardR0507/Pets-world",
     // website: "pets-world-green.vercel.app",
@@ -124,11 +180,11 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     title: "DragonBall PWA",
     description:
       "Dragon Ball App is a wiki-like application of some of the characters from the DragonBall Z anime series. Features a character finder.",
-    image: "/DB-app-pwa.png",
+    image: "/images/DB-app-pwa.png",
     type: "Personal",
     repo: "https://github.com/EdwardR0507/Dragon-ball-pwa",
     website: "https://db-app-react.netlify.app/home",

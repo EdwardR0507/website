@@ -9,6 +9,7 @@ const Dart = dynamic(() => import("./tech/Dart"));
 const Devmente = dynamic(() => import("./Devmente"));
 const ExpressJS = dynamic(() => import("./tech/ExpressJS"));
 const Flutter = dynamic(() => import("./tech/Flutter"));
+const MaterialUI = dynamic(() => import("./tech/MaterialUI"));
 const GetX = dynamic(() => import("./tech/GetX"));
 const Github = dynamic(() => import("./tech/Github"));
 const GraphQL = dynamic(() => import("./tech/GraphQL"));
@@ -59,6 +60,8 @@ const renderLogo = (
       return <Python width={width} height={height} {...props} />;
     case ETech.Flutter:
       return <Flutter width={width} height={height} {...props} />;
+    case ETech.MaterialUI:
+      return <MaterialUI width={width} height={height} {...props} />;
     case ETech.GetX:
       return <GetX width={width} height={height} {...props} />;
     case ETech.Astro:
@@ -122,7 +125,7 @@ export enum ETech {
   Dart = "Dart",
   Express = "Express",
   Flutter = "Flutter",
-  Framer = "Framer Motion",
+  MaterialUI = "Material UI",
   GetX = "GetX",
   GraphQL = "GraphQL",
   JavaScript = "Javascript",
