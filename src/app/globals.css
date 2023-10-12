@@ -22,3 +22,12 @@ body {
   stroke: #3b82f6;
   fill: #3b82f6;
 }
+
+@keyframes fillProgressBar {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}

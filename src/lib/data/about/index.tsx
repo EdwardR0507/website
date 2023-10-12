@@ -10,7 +10,7 @@ export const PERSONAL_INFO = {
   },
   socialMedia: {
     github: "https://github.com/EdwardR0507",
-    linkedin: "https://www.linkedin.com/in/edward-ramos-0a3a2b1b4/",
+    linkedin: "https://www.linkedin.com/in/edwardramosvillarreal",
     twitter: "https://twitter.com/EdwardR0507",
   },
   softSkills: [
