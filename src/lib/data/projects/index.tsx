@@ -74,7 +74,7 @@ export const projects = [
     id: 3,
     title: "Kisaragi",
     description:
-      "KIsaragi is a web application that allows small shops to create their own space on the web and offer their products to customers.",
+      "Kisaragi is a web application that allows small shops to create their own space on the web and offer their products to customers.",
     image: "/images/Kisaragi.png",
     type: "College",
     repo: "https://github.com/EdwardR0507/kisaragi-front",

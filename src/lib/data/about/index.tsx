@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
   socialMedia: {
     github: "https://github.com/EdwardR0507",
     linkedin: "https://www.linkedin.com/in/edwardramosvillarreal",
-    twitter: "https://twitter.com/EdwardR0507",
+    twitter: "https://twitter.com/EdRamosV",
   },
   softSkills: [
     "Teamwork",
