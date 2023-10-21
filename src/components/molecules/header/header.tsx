@@ -1,15 +1,24 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useTheme } from "@wits/next-themes";
 import { motion } from "framer-motion";
 
 import { fadeIn } from "@/utils";
 import { socialMediaSection } from "./header-items";
 
-import International from "../../atoms/icons/International";
+import DarkMode from "@/components/atoms/icons/DarkMode";
 import LightMode from "../../atoms/icons/LightMode";
 
 export const Header = () => {
+  const { theme, setTheme } = useTheme();
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <motion.header
       variants={fadeIn("up", 0.01)}
@@ -28,20 +37,26 @@ export const Header = () => {
               key={href}
               href={href}
               target={target}
+              aria-label={`${href} social media link`}
               className="hover:scale-105 transition-transform duration-150 ease-in-out"
             >
               <Icon />
             </Link>
           ))}
         </div>
-        <div className="grow-0 h-full flex items-center justify-end gap-6">
-          <i className="cursor-pointer ">
-            <LightMode />
-          </i>
-          <i className="cursor-pointer">
-            <International />
-          </i>
-        </div>
+        {isMounted && (
+          <div className="grow-0 h-full flex items-center justify-end gap-6">
+            {theme === "dark" ? (
+              <i className="cursor-pointer" onClick={() => setTheme("light")}>
+                <LightMode />
+              </i>
+            ) : (
+              <i className="cursor-pointer" onClick={() => setTheme("dark")}>
+                <DarkMode />
+              </i>
+            )}
+          </div>
+        )}
       </div>
     </motion.header>
   );

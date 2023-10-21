@@ -8,7 +8,7 @@ const ProjectsIcon = (props: any) => (
     {...props}
   >
     <path
-      stroke="#fff"
+      stroke="currentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
       strokeWidth={1.5}

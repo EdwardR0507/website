@@ -9,27 +9,12 @@ interface ProjectSectionProps {
   className?: string;
 }
 
-const animationVariants = {
-  visible: { opacity: 1, translateX: 0, translateY: 0 },
-  hidden: { opacity: 0, translateX: -50, translateY: 50 },
-};
-
-const animationVariantsAlternate = {
-  ...animationVariants,
-  hidden: { ...animationVariants.hidden, translateX: 50 },
-};
-
 export const ProjectSection = ({ className }: ProjectSectionProps) => {
   return (
     <section className={cn("flex flex-col gap-8 mb-16 lg:mb-4", className)}>
       {projects.map((project) => (
         <Reveal
           key={project.id}
-          animationVariants={
-            project.id % 2 === 0
-              ? animationVariantsAlternate
-              : animationVariants
-          }
           animationOrder={project.id}
           className={cn({
             "self-end lg:mr-6": project.id % 2 === 0,

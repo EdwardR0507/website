@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Karla as FontKarla } from "next/font/google";
+import { ServerThemeProvider } from "@wits/next-themes";
 
 import { Header, Navbar } from "@/components/molecules";
 import { siteConfig } from "@/lib/site";
@@ -49,19 +50,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body
-        className={cn(
-          "max-w-[1440px] m-auto bg-custom-background",
-          fontKarla.className
-        )}
-      >
-        <>
+    <ServerThemeProvider attribute="class">
+      <html lang="en">
+        <body
+          className={cn(
+            "max-w-[1440px] m-auto bg-custom-background",
+            fontKarla.className
+          )}
+          suppressHydrationWarning
+        >
           <Header />
           <main className="p-4">{children}</main>
           <Navbar />
-        </>
-      </body>
-    </html>
+        </body>
+      </html>
+    </ServerThemeProvider>
   );
 }

@@ -19,20 +19,21 @@ export const Navbar = () => {
       animate="show"
       exit="hidden"
     >
-      <div className="flex items-center justify-around w-full px-4 py-3 lg:py-8 lg:flex-col lg:justify-center gap-y-10 lg:px-4 lg:h-max bg-white/10 backdrop-blur-sm lg:rounded-full">
+      <div className="flex items-center justify-around w-full px-4 py-3 lg:py-8 lg:flex-col lg:justify-center gap-y-10 lg:px-4 lg:h-max bg-black/10 dark:bg-white/10 backdrop-blur-sm lg:rounded-full">
         {navbarItems.map(({ name, path, icon }) => (
           <div key={name}>
             <Link
               href={path}
+              aria-label={`${name} page`}
               className={cn("group transition-all duration-300", {
                 "current-icon-page": path === pathName,
               })}
             >
               <div className="absolute right-0 hidden mr-20 rounded-sm lg:group-hover:flex lg:group-hover:items-center">
-                <div className="relative flex items-center p-2 leading-none text-black capitalize bg-white rounded-sm">
+                <div className="relative flex items-center p-2 leading-none text-white dark:text-black capitalize bg-black dark:bg-white rounded-sm">
                   {name}
                 </div>
-                <div className="absolute border-l-8 border-r-0 border-solid border-l-white border-y-transparent border-y-4 -right-2" />
+                <div className="absolute border-l-8 border-r-0 border-solid border-l-black dark:border-l-white border-y-transparent border-y-4 -right-2" />
               </div>
               {icon}
             </Link>

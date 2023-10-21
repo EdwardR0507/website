@@ -37,7 +37,7 @@ export const StackSection = ({ title, skills }: StackSectionProps) => {
       <ul className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4">
         {skills.map((skill, index) => (
           <motion.li
-            className="bg-white rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-black/10 rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"

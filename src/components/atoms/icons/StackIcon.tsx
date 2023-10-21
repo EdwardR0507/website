@@ -7,7 +7,7 @@ const StackIcon = (props: any) => (
     {...props}
   >
     <path
-      stroke="#fff"
+      stroke="currentColor"
       fillRule="evenodd"
       d="m0 10 8 4 8-4v2l-8 4-8-4v-2zm0-4 8 4 8-4v2l-8 4-8-4V6zm8-6 8 4-8 4-8-4 8-4z"
     />

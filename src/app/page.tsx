@@ -9,7 +9,7 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <h1 className="text-blue-500 flex flex-col gap-1 lg:text-3xl">
             Hi, my name is
-            <span className="text-4xl lg:text-6xl text-white">
+            <span className="text-4xl lg:text-6xl  text-black dark:text-white">
               Edward Ramos.
             </span>
             <span className="text-4xl lg:text-6xl">

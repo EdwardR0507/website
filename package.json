@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@wits/next-themes": "^0.2.16",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "framer-motion": "10.16.4",

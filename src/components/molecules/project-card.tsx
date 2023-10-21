@@ -28,7 +28,9 @@ export const ProjectCard = ({
     <section className="group bg-gray-100 max-w-[44rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative h-auto hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
       <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem] gap-4">
         <div className="flex items-center gap-3">
-          <h3 className="text-2xl font-semibold">{title}</h3>
+          <h3 className="text-2xl font-semibold text-black dark:text-white">
+            {title}
+          </h3>
           <Badge text={type} variant={getBadgeVariantByType(type)} />
         </div>
         <p className="leading-relaxed text-gray-700 dark:text-white/70 text-justify">
