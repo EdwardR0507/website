@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <ServerThemeProvider attribute="class">
+    <ServerThemeProvider attribute="class" defaultTheme="dark">
       <html lang="en">
         <body
           className={cn(
