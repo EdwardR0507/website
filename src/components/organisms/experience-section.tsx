@@ -21,7 +21,7 @@ export const ExperienceSection = () => {
             isCurrent,
           } = experience;
           return (
-            <li className="relative group" key={id}>
+            <li className="relative group mt-4" key={id}>
               <div className="pl-8 h-full ml-3 border-l-2 border-gray-300 dark:border-gray-700 group-last:border-none">
                 <span className="absolute flex items-center justify-center w-8 h-8 ml-3 rounded-full bg-blue-100 -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-500 p-1">
                   <Logo />

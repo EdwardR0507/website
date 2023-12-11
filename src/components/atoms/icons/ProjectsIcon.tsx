@@ -1,8 +1,8 @@
 const ProjectsIcon = (props: any) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={800}
-    height={800}
+    width={40}
+    height={40}
     fill="none"
     viewBox="0 0 24 24"
     {...props}

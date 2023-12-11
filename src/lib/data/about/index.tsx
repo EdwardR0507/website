@@ -3,7 +3,7 @@ import University from "@/components/atoms/icons/University";
 
 export const PERSONAL_INFO = {
   introduction:
-    "Hello! My name is Edward, I'm a software engineer based in Lima, Peru. Specialized in frontend development. Currently, I work as a Junior Frontend Developer, where I approach every project with enthusiasm and a commitment to excellence, thriving in the fast-paced world of web development, seeing challenges as opportunities to expand my skill set and create a meaningful impact. Let's shape the digital world together, one line of code at a time!",
+    "Hello! My name is Edward, I'm a software engineer based in Lima, Peru. Specialized in frontend development with +1.5 years of experience. Currently, I work as a Junior Frontend Developer, where I approach every project with enthusiasm and a commitment to excellence, thriving in the fast-paced world of web development, seeing challenges as opportunities to expand my skill set and create a meaningful impact. Let's shape the digital world together, one line of code at a time!",
   photo: {
     src: "/images/Edward.jpg",
     alt: "Edward Ramos",
@@ -34,10 +34,10 @@ export const EXPERIENCE_INFO = [
     startDate: "June 2022",
     endDate: "Present",
     responsibilities: [
-      "Develop medium size features from scratch using React, TypeScript, Styled Components, and Apollo Client.",
-      "Develop small size features from scratch using Dart, Flutter Web, and GetX.",
-      "Discuss and propose solutions to improve the product and the development process.",
-      "Teach and mentor new trainees developers.",
+      "Engaged in regular communication to ensure alignment on project requirements and milestones.",
+      "Discussed and proposed innovative solutions to improve both the product and the development process.",
+      "Assumedamentorship role by teaching and guiding two new trainee developers.",
+      "Diligently identified, troubleshooted, and resolved frontend issues and bugs in a timely manner.",
     ],
     isCurrent: true,
   },
@@ -50,9 +50,9 @@ export const EXPERIENCE_INFO = [
     startDate: "April 2018",
     endDate: "July 2023",
     responsibilities: [
-      "Learn and apply practices of software development and documentation.",
-      "Develop web applications using the React ecosystem.",
-      "Develop mobile applications using the Flutter framework.",
+      "Learned and applied practices of software development and documentation.",
+      "Developed web applications using the React ecosystem.",
+      "Developed mobile applications using the Flutter framework.",
     ],
     isCurrent: false,
   },

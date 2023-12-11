@@ -166,6 +166,10 @@ export const projects = [
     // website: "pets-world-green.vercel.app",
     stack: [
       {
+        tech: "MaterialUI",
+        icon: () => <Icon name={ETech.MaterialUI} />,
+      },
+      {
         tech: "JavaScript",
         icon: () => <Icon name={ETech.JavaScript} />,
       },
@@ -189,6 +193,10 @@ export const projects = [
     repo: "https://github.com/EdwardR0507/Dragon-ball-pwa",
     website: "https://db-app-react.netlify.app/home",
     stack: [
+      {
+        tech: "Bootstrap",
+        icon: () => <Icon name={ETech.Bootstrap} />,
+      },
       {
         tech: "JavaScript",
         icon: () => <Icon name={ETech.JavaScript} />,

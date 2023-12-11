@@ -11,7 +11,7 @@ export const PersonalInfoSection = () => {
   return (
     <section className="flex flex-col gap-2">
       <h1 className="text-3xl font-bold text-blue-500">About me</h1>
-      <div className="flex flex-col lg:flex-row gap-2 justify-around items-center lg:gap-6">
+      <div className="flex flex-col lg:flex-row gap-2 justify-around items-center lg:gap-8">
         <div className="flex flex-col lg:max-w-[700px] gap-4">
           <p className="text-justify text-lg">{introduction}</p>
           <div className="flex flex-col gap-2 lg:gap-2">
