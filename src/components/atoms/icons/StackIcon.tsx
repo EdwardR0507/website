@@ -8,7 +8,7 @@ const StackIcon = (props: any) => (
   >
     <path
       stroke="currentColor"
-      fillRule="evenodd"
+      fill="transparent"
       d="m0 10 8 4 8-4v2l-8 4-8-4v-2zm0-4 8 4 8-4v2l-8 4-8-4V6zm8-6 8 4-8 4-8-4 8-4z"
     />
   </svg>
