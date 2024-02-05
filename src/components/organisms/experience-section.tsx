@@ -2,13 +2,22 @@ import Link from "next/link";
 
 import { EXPERIENCE_INFO } from "@/lib/data";
 import { Badge } from "../atoms";
+import { getI18N } from "@/utils";
 
-export const ExperienceSection = () => {
+interface ExperienceSectionProps {
+  lang?: string;
+}
+
+export const ExperienceSection = ({ lang }: ExperienceSectionProps) => {
+  const i18n = getI18N(lang);
+
   return (
     <section className="flex flex-col gap-4 mb-12 lg:mb-0">
-      <h2 className="text-2xl font-bold text-blue-500">My Experience</h2>
+      <h2 className="text-2xl font-bold text-blue-500">
+        {i18n.ABOUT.EXPERIENCE.TITLE}
+      </h2>
       <ul>
-        {EXPERIENCE_INFO.map((experience) => {
+        {EXPERIENCE_INFO(i18n.ABOUT.EXPERIENCE.COMPANIES).map((experience) => {
           const {
             id,
             institution,

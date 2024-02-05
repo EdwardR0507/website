@@ -13,12 +13,21 @@ export interface IProject {
   }[];
 }
 
-export const projects = [
+type ProjectParams = {
+  CRAFTER_STATION: string;
+  MEMORA_DATE: string;
+  KISARAGI: string;
+  PETS_WORLD_MOBILE: string;
+  BEIFONG: string;
+  PETS_WORLD: string;
+  DRAGONBALL_PWA: string;
+};
+
+export const projects = (description: ProjectParams) => [
   {
     id: 1,
     title: "Crafter Station",
-    description:
-      "Crafter Station is a Web Development Agency & Open Source Organization that offers services such as Web Development, Web Design, SEO, and more.",
+    description: description.CRAFTER_STATION,
     image: "/images/Crafter-station.png",
     type: "Open Source",
     repo: "https://github.com/crafter-station/website",
@@ -45,8 +54,7 @@ export const projects = [
   {
     id: 2,
     title: "Memora Date",
-    description:
-      "Memora Date offers a simple list of reminders, one-time or recurring events, and the ability to import contacts. Email alerts keep you on track.",
+    description: description.MEMORA_DATE,
     image: "/images/Memora-date.png",
     type: "Open Source",
     repo: "https://github.com/Railly/memora-date",
@@ -73,8 +81,7 @@ export const projects = [
   {
     id: 3,
     title: "Kisaragi",
-    description:
-      "Kisaragi is a web application that allows small shops to create their own space on the web and offer their products to customers.",
+    description: description.KISARAGI,
     image: "/images/Kisaragi.png",
     type: "College",
     repo: "https://github.com/EdwardR0507/kisaragi-front",
@@ -105,8 +112,7 @@ export const projects = [
   {
     id: 4,
     title: "Pets World Mobile",
-    description:
-      "Version mobile of Pets World, a web application that allows you to find your lost pet. This version include an IA that allows you to identify the breed of the lost pet.",
+    description: description.PETS_WORLD_MOBILE,
     image: "/images/Pets-world-mobile.png",
     type: "College",
     repo: "https://github.com/EdwardR0507/Pets-world-flutter",
@@ -129,8 +135,7 @@ export const projects = [
   {
     id: 5,
     title: "Beifong",
-    description:
-      "Beifong is an application that allows medical establishments to quickly and easily create a system for managing appointments. Also has a focus on accessibility providing accessibility options for the visually impaired.",
+    description: description.BEIFONG,
     image: "/images/Beifong.png",
     type: "College",
     repo: "https://github.com/EdwardR0507/beifong-front",
@@ -157,9 +162,7 @@ export const projects = [
   {
     id: 6,
     title: "Pets World",
-    description:
-      "Pets World is a web application that allows you to find your lost pet. We seek to form a responsible and committed community in order to make those who have no voice heard.",
-
+    description: description.PETS_WORLD,
     image: "/images/Pets-world.png",
     type: "College",
     repo: "https://github.com/EdwardR0507/Pets-world",
@@ -186,8 +189,7 @@ export const projects = [
   {
     id: 7,
     title: "DragonBall PWA",
-    description:
-      "Dragon Ball App is a wiki-like application of some of the characters from the DragonBall Z anime series. Features a character finder.",
+    description: description.DRAGONBALL_PWA,
     image: "/images/DB-app-pwa.png",
     type: "Personal",
     repo: "https://github.com/EdwardR0507/Dragon-ball-pwa",

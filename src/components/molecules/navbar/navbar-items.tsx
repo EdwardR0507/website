@@ -6,7 +6,7 @@ import StackIcon from "../../atoms/icons/StackIcon";
 export const navbarItems = [
   {
     name: "home",
-    path: "/",
+    path: "",
     icon: <HomeIcon className="w-10 h-10" />,
   },
   {

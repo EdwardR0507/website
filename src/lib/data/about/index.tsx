@@ -24,36 +24,40 @@ export const PERSONAL_INFO = {
   ],
 };
 
-export const EXPERIENCE_INFO = [
+export const EXPERIENCE_INFO = (company: CompanyParams) => [
   {
     id: 1,
-    institution: "Devmente",
+    institution: company.FIRST.NAME,
     logo: () => <Devmente />,
     website: "https://www.linkedin.com/company/devmenteio",
-    position: "Frontend Developer Junior",
-    startDate: "June 2022",
-    endDate: "Present",
-    responsibilities: [
-      "Engaged in regular communication to ensure alignment on project requirements and milestones.",
-      "Discussed and proposed innovative solutions to improve both the product and the development process.",
-      "Assumedamentorship role by teaching and guiding two new trainee developers.",
-      "Diligently identified, troubleshooted, and resolved frontend issues and bugs in a timely manner.",
-    ],
+    position: company.FIRST.POSITION,
+    startDate: company.FIRST.START_DATE,
+    endDate: company.FIRST.END_DATE,
+    responsibilities: company.FIRST.RESPONSIBILITIES,
     isCurrent: true,
   },
   {
     id: 2,
-    institution: "Universidad Nacional Mayor de San Marcos",
+    institution: company.SECOND.NAME,
     logo: () => <University />,
     website: "https://www.unmsm.edu.pe",
-    position: "Software Engineering Student",
-    startDate: "April 2018",
-    endDate: "July 2023",
-    responsibilities: [
-      "Learned and applied practices of software development and documentation.",
-      "Developed web applications using the React ecosystem.",
-      "Developed mobile applications using the Flutter framework.",
-    ],
+    position: company.SECOND.POSITION,
+    startDate: company.SECOND.START_DATE,
+    endDate: company.SECOND.END_DATE,
+    responsibilities: company.SECOND.RESPONSIBILITIES,
     isCurrent: false,
   },
 ];
+
+type CompanyExperience = {
+  NAME: string;
+  POSITION: string;
+  START_DATE: string;
+  END_DATE: string;
+  RESPONSIBILITIES: string[];
+};
+
+type CompanyParams = {
+  FIRST: CompanyExperience;
+  SECOND: CompanyExperience;
+};

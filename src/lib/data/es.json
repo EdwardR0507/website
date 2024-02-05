@@ -1,0 +1,91 @@
+{
+  "HOME": {
+    "GREETING": "Hola, mi nombre es",
+    "NAME": "Edward Ramos.",
+    "SLOGAN": "Llevo tus ideas al mundo virtual",
+    "DESCRIPTION": "Soy un ingeniero de software con sede en Lima, Perú. Especializado en construir sitios web, aplicaciones y todo lo relacionado.",
+    "CALL_TO_ACTION": "Ponte en contacto",
+    "SECONDARY_CALL_TO_ACTION": "Más sobre mí"
+  },
+  "ABOUT": {
+    "PERSONAL_INFORMATION": {
+      "TITLE": "Sobre Mí",
+      "INTRODUCTION": "¡Hola! Mi nombre es Edward, soy un ingeniero de software con sede en Lima, Perú. Especializado en desarrollo frontend con +1.5 años de experiencia. Actualmente, trabajo como Desarrollador Frontend Junior, donde abordo cada proyecto con entusiasmo y un compromiso con la excelencia, prosperando en el acelerado mundo del desarrollo web, viendo los desafíos como oportunidades para expandir mi conjunto de habilidades y crear un impacto significativo. ¡Vamos a dar forma al mundo digital juntos, una línea de código a la vez!",
+      "SOFT_SKILLS": {
+        "TITLE": "Algunas de mis habilidades blandas son:",
+        "LIST": [
+          "Trabajo en equipo",
+          "Comunicación",
+          "Resolución de problemas",
+          "Gestión del tiempo",
+          "Adaptabilidad",
+          "Resolución de conflictos",
+          "Liderazgo"
+        ]
+      }
+    },
+    "EXPERIENCE": {
+      "TITLE": "Mi Experiencia",
+      "COMPANIES": {
+        "FIRST": {
+          "NAME": "Devmente",
+          "POSITION": "Desarrollador Frontend Junior",
+          "START_DATE": "Junio 2022",
+          "END_DATE": "Presente",
+          "RESPONSIBILITIES": [
+            "Participé en reuniones regulares para garantizar la alineación en los requisitos y hitos del proyecto.",
+            "Discutí y propuse soluciones innovadoras para mejorar tanto el producto como el proceso de desarrollo.",
+            "Asumí un papel de mentor enseñando y guiando a dos nuevos desarrolladores en formación.",
+            "Identifiqué, solucioné y resolví diligentemente problemas y errores de frontend de manera oportuna."
+          ]
+        },
+        "SECOND": {
+          "NAME": "Universidad Nacional Mayor de San Marcos",
+          "POSITION": "Estudiante de Ingeniería de Software",
+          "START_DATE": "Abril 2018",
+          "END_DATE": "Julio 2023",
+          "RESPONSIBILITIES": [
+            "Aprendí y apliqué prácticas de desarrollo y documentación de software.",
+            "Desarrollé aplicaciones web utilizando el ecosistema de React.",
+            "Desarrollé aplicaciones móviles utilizando el framework de Flutter."
+          ]
+        }
+      }
+    }
+  },
+
+  "STACK": {
+    "TITLE": "Stack",
+    "DESCRIPTION": "Bienvenido a mi sección de Stack. Aquí, te presento las tecnologías, herramientas y lenguajes de programación que forman la base de mi enfoque tecnológico. Mi 'Stack' representa el conjunto de recursos con los que he trabajado y sigo explorando. Desde lenguajes de programación hasta frameworks, estas son las bases que utilizo para dar vida a mis proyectos. Explora mi Stack para obtener una visión más profunda de mis habilidades y preferencias tecnológicas.",
+    "TECHNOLOGIES": {
+      "PROGRAMMING_LANGUAGES": "Lenguajes de Programación",
+      "FRONTEND_TECH": "Tecnologías Frontend",
+      "STATE_MANAGEMENT": "Gestión de Estado",
+      "UI_LIBRARIES": "Librerías de UI",
+      "BACKEND_TECH": "Tecnologías Backend",
+      "DATABASES": "Bases de Datos",
+      "TESTING": "Pruebas"
+    }
+  },
+
+  "PROJECTS": {
+    "TITLE": "Proyectos",
+    "DESCRIPTION": "Bienvenido a mi sección de proyectos, donde encontrarás una amplia gama de experiencias. ¡Cada proyecto cuenta su propia historia y destaca mis habilidades y enfoques únicos en cada una de estas áreas. ¡Únete a mí en este viaje a través de mis esfuerzos profesionales y creativos! Te invito a explorar mi trabajo en diferentes categorías:",
+    "BADGES_DESCRIPTION": {
+      "WORK": "para proyectos profesionales",
+      "OPEN_SOURCE": "para contribuciones a la comunidad",
+      "COLLEGE": "para experiencias académicas",
+      "PERSONAL": "para creaciones impulsadas por la pasión"
+    },
+
+    "PROJECTS_DESCRIPTION": {
+      "CRAFTER_STATION": "Crafter Station es una Agencia de Desarrollo Web y Organización de Código Abierto que ofrece servicios como Desarrollo Web, Diseño Web, SEO y más.",
+      "MEMORA_DATE": "Memora Date ofrece una lista simple de recordatorios, eventos únicos o recurrentes y la capacidad de importar contactos. Las alertas por correo electrónico te mantienen en el buen camino.",
+      "KISARAGI": "Kisaragi es una aplicación web que permite a las pequeñas tiendas crear su propio espacio en la web y ofrecer sus productos a los clientes.",
+      "PETS_WORLD_MOBILE": "Versión móvil de Pets World, una aplicación web que te permite encontrar a tu mascota perdida. Esta versión incluye una IA que te permite identificar la raza de la mascota perdida.",
+      "BEIFONG": "Beifong es una aplicación que permite a los establecimientos médicos crear de manera rápida y sencilla un sistema para gestionar citas. También tiene un enfoque en la accesibilidad, proporcionando opciones de accesibilidad para personas con discapacidad visual.",
+      "PETS_WORLD": "Pets World es una aplicación web que te permite encontrar a tu mascota perdida. Incluye una IA que te permite identificar la raza de la mascota perdida.",
+      "DRAGONBALL_PWA": "Dragon Ball App es una aplicación tipo wiki de algunos de los personajes de la serie de anime DragonBall Z. Incluye un buscador de personajes"
+    }
+  }
+}

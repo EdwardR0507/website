@@ -10,6 +10,7 @@ import { navbarItems } from "./navbar-items";
 
 export const Navbar = () => {
   const pathName = usePathname();
+  const locale = pathName.split("/")[1];
 
   return (
     <motion.div
@@ -23,10 +24,10 @@ export const Navbar = () => {
         {navbarItems.map(({ name, path, icon }) => (
           <div key={name}>
             <Link
-              href={path}
+              href={`/${locale}${path}`}
               aria-label={`${name} page`}
               className={cn("group transition-all duration-300", {
-                "current-icon-page": path === pathName,
+                "current-icon-page": `/${locale}${path}` === pathName,
               })}
             >
               <div className="absolute right-0 hidden mr-20 rounded-sm lg:group-hover:flex lg:group-hover:items-center">

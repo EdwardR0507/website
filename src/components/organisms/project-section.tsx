@@ -7,12 +7,24 @@ import { ProjectCard } from "../molecules/project-card";
 
 interface ProjectSectionProps {
   className?: string;
+  projectsDescription: {
+    CRAFTER_STATION: string;
+    MEMORA_DATE: string;
+    KISARAGI: string;
+    PETS_WORLD_MOBILE: string;
+    BEIFONG: string;
+    PETS_WORLD: string;
+    DRAGONBALL_PWA: string;
+  };
 }
 
-export const ProjectSection = ({ className }: ProjectSectionProps) => {
+export const ProjectSection = ({
+  className,
+  projectsDescription,
+}: ProjectSectionProps) => {
   return (
     <section className={cn("flex flex-col gap-8 mb-16 lg:mb-4", className)}>
-      {projects.map((project) => (
+      {projects(projectsDescription).map((project) => (
         <Reveal
           key={project.id}
           animationOrder={project.id}

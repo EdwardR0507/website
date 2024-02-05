@@ -1,0 +1,88 @@
+{
+  "HOME": {
+    "GREETING": "Hi, my name is",
+    "NAME": "Edward Ramos.",
+    "SLOGAN": "I make ideas real online",
+    "DESCRIPTION": "I'm a software engineer based in Lima, Perú. Specializing in building websites, applications, and everything in between.",
+    "CALL_TO_ACTION": "Get in touch",
+    "SECONDARY_CALL_TO_ACTION": "More about me"
+  },
+  "ABOUT": {
+    "PERSONAL_INFORMATION": {
+      "TITLE": "About Me",
+      "INTRODUCTION": "Hello! My name is Edward, I'm a software engineer based in Lima, Peru. Specialized in frontend development with +1.5 years of experience. Currently, I work as a Junior Frontend Developer, where I approach every project with enthusiasm and a commitment to excellence, thriving in the fast-paced world of web development, seeing challenges as opportunities to expand my skill set and create a meaningful impact. Let's shape the digital world together, one line of code at a time!",
+      "SOFT_SKILLS": {
+        "TITLE": "Some of my soft skills are:",
+        "LIST": [
+          "Teamwork",
+          "Communication",
+          "Problem-solving",
+          "Time management",
+          "Adaptability",
+          "Conflict resolution",
+          "Leadership"
+        ]
+      }
+    },
+    "EXPERIENCE": {
+      "TITLE": "My Experience",
+      "COMPANIES": {
+        "FIRST": {
+          "NAME": "Devmente",
+          "POSITION": "Frontend Developer Junior",
+          "START_DATE": "June 2022",
+          "END_DATE": "Present",
+          "RESPONSIBILITIES": [
+            "Engaged in regular communication to ensure alignment on project requirements and milestones.",
+            "Discussed and proposed innovative solutions to improve both the product and the development process.",
+            "Assumed a mentorship role by teaching and guiding two new trainee developers.",
+            "Diligently identified, troubleshooted, and resolved frontend issues and bugs in a timely manner."
+          ]
+        },
+        "SECOND": {
+          "NAME": "Universidad Nacional Mayor de San Marcos",
+          "POSITION": "Software Engineering Student",
+          "START_DATE": "April 2018",
+          "END_DATE": "July 2023",
+          "RESPONSIBILITIES": [
+            "Learned and applied practices of software development and documentation.",
+            "Developed web applications using the React ecosystem.",
+            "Developed mobile applications using the Flutter framework."
+          ]
+        }
+      }
+    }
+  },
+  "STACK": {
+    "TITLE": "Stack",
+    "DESCRIPTION": "Welcome to my Stack section. Here, I present to you the technologies, tools, and programming languages that form the foundation of my technological approach. My 'Stack' represents the set of resources I've worked with and continue to explore. From programming languages to frameworks, these are the pillars I use to bring my projects to life. Explore my Stack to gain a deeper insight into my technological skills and preferences.",
+    "TECHNOLOGIES": {
+      "PROGRAMMING_LANGUAGES": "Programming Languages",
+      "FRONTEND_TECH": "Frontend Technologies",
+      "STATE_MANAGEMENT": "State Management",
+      "UI_LIBRARIES": "UI Libraries",
+      "BACKEND_TECH": "Backend Technologies",
+      "DATABASES": "Databases",
+      "TESTING": "Testing"
+    }
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "DESCRIPTION": "Welcome to my projects section, where you will find a diverse range of experiences! Each project tells its own story and highlights my unique skills and approaches in each of these areas. Join me on this journey through my professional and creative endeavors! I invite you to explore my work in different categories:",
+    "BADGES_DESCRIPTION": {
+      "WORK": "for professional projects",
+      "OPEN_SOURCE": "for contributions to the community",
+      "COLLEGE": "for academic experiences",
+      "PERSONAL": "for passion-driven creations"
+    },
+    "PROJECTS_DESCRIPTION": {
+      "CRAFTER_STATION": "Crafter Station is a Web Development Agency & Open Source Organization that offers services such as Web Development, Web Design, SEO, and more.",
+      "MEMORA_DATE": "Memora Date offers a simple list of reminders, one-time or recurring events, and the ability to import contacts. Email alerts keep you on track.",
+      "KISARAGI": "Kisaragi is a web application that allows small shops to create their own space on the web and offer their products to customers.",
+      "PETS_WORLD_MOBILE": "Version mobile of Pets World, a web application that allows you to find your lost pet. This version include an IA that allows you to identify the breed of the lost pet.",
+      "BEIFONG": "Beifong is an application that allows medical establishments to quickly and easily create a system for managing appointments. Also has a focus on accessibility providing accessibility options for the visually impaired.",
+      "PETS_WORLD": "Pets World is a web application that allows you to find your lost pet. We seek to form a responsible and committed community in order to make those who have no voice heard.",
+      "DRAGONBALL_PWA": "Dragon Ball App is a wiki-like application of some of the characters from the DragonBall Z anime series. Features a character finder."
+    }
+  }
+}
