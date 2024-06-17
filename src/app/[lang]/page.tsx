@@ -1,24 +1,27 @@
 import Link from "next/link";
 
 import { Button } from "@/components/atoms";
-import { getI18N } from "@/utils";
+import { CustomLink } from "@/components/molecules/custom-link";
+import { Locale } from "@/i18n-config";
+import { getDictionary } from "@/lib/lang/get-dictionary";
 
-export default function Home({ params }: { params: { lang?: string } }) {
-  const i18n = getI18N(params.lang);
-
+export default async function Home({ params }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(params.lang);
   return (
-    <div className="flex w-full flex-col lg:flex-row h-[calc(100vh-188px)] items-center justify-center lg:justify-start gap-4">
-      <div className="flex flex-col gap-4 lg:gap-10 lg:w-[60vw]">
+    <div className="flex w-full flex-col lg:flex-row justify-center items-center my-auto">
+      <div className="flex flex-col gap-4 lg:gap-10 md:w-[60vw]">
         <div className="flex flex-col gap-2">
           <h1 className="text-blue-500 flex flex-col gap-1 lg:text-3xl">
-            {i18n.HOME.GREETING}
+            {dictionary.HOME.GREETING}
             <span className="text-4xl lg:text-6xl  text-black dark:text-white">
-              {i18n.HOME.NAME}
+              {dictionary.HOME.NAME}
             </span>
-            <span className="text-4xl lg:text-6xl">{i18n.HOME.SLOGAN}</span>
+            <span className="text-4xl lg:text-6xl">
+              {dictionary.HOME.SLOGAN}
+            </span>
           </h1>
           <p className="text-xl text-slate-500 lg:text-3xl">
-            {i18n.HOME.DESCRIPTION}
+            {dictionary.HOME.DESCRIPTION}
           </p>
         </div>
         <div className="flex justify-center items-center w-full gap-4 lg:gap-12">
@@ -29,7 +32,7 @@ export default function Home({ params }: { params: { lang?: string } }) {
             asChild
           >
             <Link href="mailto:ramosedward21@gmail.com">
-              {i18n.HOME.CALL_TO_ACTION}
+              {dictionary.HOME.CALL_TO_ACTION}
             </Link>
           </Button>
           <Button
@@ -38,7 +41,9 @@ export default function Home({ params }: { params: { lang?: string } }) {
             className="p-2 text-blue-500 lg:text-xl"
             asChild
           >
-            <Link href="/about">{i18n.HOME.SECONDARY_CALL_TO_ACTION}</Link>
+            <CustomLink lang={params.lang} href="/about">
+              {dictionary.HOME.SECONDARY_CALL_TO_ACTION}
+            </CustomLink>
           </Button>
         </div>
       </div>

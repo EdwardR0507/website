@@ -1,4 +1,5 @@
 import { StackSection } from "@/components/organisms";
+import { Locale } from "@/i18n-config";
 import {
   backend,
   databases,
@@ -8,44 +9,47 @@ import {
   testing,
   uiLibraries,
 } from "@/lib/data";
-import { getI18N } from "@/utils";
+import { getDictionary } from "@/lib/lang/get-dictionary";
 
-export default function Stack({ params }: { params: { lang?: string } }) {
-  const i18n = getI18N(params.lang);
+export default async function Stack({ params }: { params: { lang: Locale } }) {
+  const dictionary = await getDictionary(params.lang);
 
   return (
     <>
       <h1 className="text-3xl font-bold text-blue-500 mb-4">
-        {i18n.STACK.TITLE}
+        {dictionary.STACK.TITLE}
       </h1>
-      <p className="my-4 text-justify text-lg w-full lg:w-[90%] 2xl:w-full">
-        {i18n.STACK.DESCRIPTION}
+      <p className="my-4 text-justify text-lg w-full">
+        {dictionary.STACK.DESCRIPTION}
       </p>
       <StackSection
         skills={programmingLanguages}
-        title={i18n.STACK.TECHNOLOGIES.PROGRAMMING_LANGUAGES}
+        title={dictionary.STACK.TECHNOLOGIES.PROGRAMMING_LANGUAGES}
       />
       <StackSection
         skills={frontend}
-        title={i18n.STACK.TECHNOLOGIES.FRONTEND_TECH}
+        title={dictionary.STACK.TECHNOLOGIES.FRONTEND_TECH}
       />
       <StackSection
         skills={stateManagement}
-        title={i18n.STACK.TECHNOLOGIES.STATE_MANAGEMENT}
+        title={dictionary.STACK.TECHNOLOGIES.STATE_MANAGEMENT}
       />
       <StackSection
         skills={uiLibraries}
-        title={i18n.STACK.TECHNOLOGIES.UI_LIBRARIES}
+        title={dictionary.STACK.TECHNOLOGIES.UI_LIBRARIES}
       />
       <StackSection
         skills={backend}
-        title={i18n.STACK.TECHNOLOGIES.BACKEND_TECH}
+        title={dictionary.STACK.TECHNOLOGIES.BACKEND_TECH}
       />
       <StackSection
         skills={databases}
-        title={i18n.STACK.TECHNOLOGIES.DATABASES}
+        title={dictionary.STACK.TECHNOLOGIES.DATABASES}
       />
-      <StackSection skills={testing} title={i18n.STACK.TECHNOLOGIES.TESTING} />
+      <StackSection
+        skills={testing}
+        title={dictionary.STACK.TECHNOLOGIES.TESTING}
+      />
     </>
   );
 }

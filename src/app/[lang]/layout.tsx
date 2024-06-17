@@ -6,6 +6,8 @@ import { Header, Navbar } from "@/components/molecules";
 import { siteConfig } from "@/lib/site";
 import { cn } from "@/lib/utils";
 import "./globals.css";
+import { getDictionary } from "@/lib/lang/get-dictionary";
+import { Locale } from "@/i18n-config";
 
 export const fontKarla = FontKarla({
   weight: ["400", "700"],
@@ -45,24 +47,32 @@ export const metadata: Metadata = {
   manifest: "/favicon/site.webmanifest",
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface RootLayoutProps {
   children: React.ReactNode;
-}) {
+  params: { lang: Locale };
+}
+
+export default async function RootLayout({
+  children,
+  params,
+}: RootLayoutProps) {
+  const dictionary = await getDictionary(params.lang);
+
   return (
     <ServerThemeProvider attribute="class" defaultTheme="dark">
       <html lang="en">
         <body
-          className={cn(
-            "max-w-[1440px] m-auto bg-custom-background",
-            fontKarla.className
-          )}
+          className={cn("max-w-[1040px] m-auto", fontKarla.className)}
           suppressHydrationWarning
         >
-          <Header />
-          <main className="p-4">{children}</main>
-          <Navbar />
+          <Header lang={params.lang} />
+          <main className="flex flex-col p-4 min-h-[calc(100vh-136px)] lg:min-h-[calc(100vh-72px)] w-full">
+            {children}
+          </main>
+          <Navbar
+            lang={params.lang}
+            dictionary={dictionary.COMMON.NAVIGATION}
+          />
         </body>
       </html>
     </ServerThemeProvider>

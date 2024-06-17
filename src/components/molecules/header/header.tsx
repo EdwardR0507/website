@@ -1,24 +1,22 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
-
 import { useTheme } from "@wits/next-themes";
-import { motion } from "framer-motion";
 
-import { fadeIn } from "@/utils";
+import { Locale, i18n } from "@/i18n-config";
+import { CustomLink } from "../custom-link";
 import { socialMediaSection } from "./header-items";
 
-import WorldIcon from "../../atoms/icons/WorldIcon";
+import LightMode from "@/components/atoms/icons/LightMode";
 import DarkMode from "@/components/atoms/icons/DarkMode";
-import LightMode from "../../atoms/icons/LightMode";
+import WorldIcon from "@/components/atoms/icons/WorldIcon";
 
-export const Header = () => {
+export const Header = ({ lang }: { lang: Locale }) => {
   const [isMounted, setIsMounted] = useState(false);
 
   const pathName = usePathname();
-  const locale = pathName.split("/")[1];
 
   const { theme, setTheme } = useTheme();
 
@@ -26,10 +24,20 @@ export const Header = () => {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  const getOppositeLanguagePath = () => {
-    const currentLanguage = locale === "es" ? "en" : "es";
-    const additionalPath = pathName.split("/")[2] ?? "";
-    return `/${currentLanguage}/${additionalPath}`;
+  const getNewHref = (selectedLanguage: Locale): string => {
+    const currentLangIsDefault = lang === i18n.defaultLocale;
+    const targetLanguage = currentLangIsDefault
+      ? selectedLanguage
+      : i18n.defaultLocale;
+
+    const pathSegments = pathName.split("/");
+
+    const newHref =
+      targetLanguage === selectedLanguage
+        ? `/${targetLanguage}/${pathSegments.slice(1).join("/")}`
+        : `/${pathSegments.slice(2).join("/") ?? ""}`;
+
+    return newHref;
   };
 
   useEffect(() => {
@@ -37,17 +45,11 @@ export const Header = () => {
   }, []);
 
   return (
-    <motion.header
-      variants={fadeIn("up", 0.01)}
-      initial="hidden"
-      animate="show"
-      exit="hidden"
-      className="relative z-50 top-0 w-full "
-    >
+    <header className="relative z-50 top-0 w-full ">
       <div className="w-full h-full flex justify-between items-center p-4">
-        <Link href={`/${locale}`} className="grow-0 text-4xl">
+        <CustomLink lang={lang} href="/" className="grow-0 text-4xl">
           👋
-        </Link>
+        </CustomLink>
         <div className="flex grow justify-center gap-6">
           {socialMediaSection.map(({ icon: Icon, href, target }) => (
             <Link
@@ -68,7 +70,7 @@ export const Header = () => {
                 {theme === "dark" ? <LightMode /> : <DarkMode />}
               </i>
             </div>
-            <Link href={getOppositeLanguagePath()} passHref>
+            <Link href={getNewHref("en")} passHref replace>
               <i className="cursor-pointer">
                 <WorldIcon />
               </i>
@@ -76,6 +78,6 @@ export const Header = () => {
           </div>
         )}
       </div>
-    </motion.header>
+    </header>
   );
 };

@@ -4,22 +4,24 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --bg-gradient: radial-gradient(50% 66.67% at 50% 33.33, blue, red);
+  --background-start: #ddd;
+  --background-end: #fff;
 }
 
 .dark {
   --foreground-rgb: 255, 255, 255;
-  --bg-gradient: radial-gradient(50% 66.67% at 50% 33.33, blue, red);
+  --background-start: #222;
+  --background-end: #000;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
+  background: radial-gradient(
+      circle closest-corner at center,
+      var(--background-start),
+      var(--background-end) 40%
     )
-    rgb(var(--background-start-rgb));
+    no-repeat;
 }
 
 .current-icon-page svg path {

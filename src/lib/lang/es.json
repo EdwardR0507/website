@@ -87,5 +87,14 @@
       "PETS_WORLD": "Pets World es una aplicación web que te permite encontrar a tu mascota perdida. Incluye una IA que te permite identificar la raza de la mascota perdida.",
       "DRAGONBALL_PWA": "Dragon Ball App es una aplicación tipo wiki de algunos de los personajes de la serie de anime DragonBall Z. Incluye un buscador de personajes"
     }
+  },
+
+  "COMMON": {
+    "NAVIGATION": {
+      "HOME": "Inicio",
+      "ABOUT": "Sobre Mí",
+      "STACK": "Stack",
+      "PROJECTS": "Proyectos"
+    }
   }
 }

@@ -2,22 +2,18 @@ import Link from "next/link";
 
 import { EXPERIENCE_INFO } from "@/lib/data";
 import { Badge } from "../atoms";
-import { getI18N } from "@/utils";
+import { getDictionary } from "@/lib/lang/get-dictionary";
 
 interface ExperienceSectionProps {
-  lang?: string;
+  dictionary: Awaited<ReturnType<typeof getDictionary>>["ABOUT"]["EXPERIENCE"];
 }
 
-export const ExperienceSection = ({ lang }: ExperienceSectionProps) => {
-  const i18n = getI18N(lang);
-
+export const ExperienceSection = ({ dictionary }: ExperienceSectionProps) => {
   return (
     <section className="flex flex-col gap-4 mb-12 lg:mb-0">
-      <h2 className="text-2xl font-bold text-blue-500">
-        {i18n.ABOUT.EXPERIENCE.TITLE}
-      </h2>
+      <h2 className="text-2xl font-bold text-blue-500">{dictionary.TITLE}</h2>
       <ul>
-        {EXPERIENCE_INFO(i18n.ABOUT.EXPERIENCE.COMPANIES).map((experience) => {
+        {EXPERIENCE_INFO(dictionary.COMPANIES).map((experience) => {
           const {
             id,
             institution,
