@@ -29,7 +29,7 @@ export const PersonalInfoSection = ({
               {dictionary.SOFT_SKILLS.LIST.map((skill) => (
                 <li
                   key={skill}
-                  className="bg-black/[0.7] px-4 py-2 text-sm tracking-wider text-white rounded-full dark:text-white/70"
+                  className="bg-black/[0.7] text-sm tracking-wider text-white rounded-full dark:text-white/70 dark:bg-white/10 flex items-center px-4 py-2"
                 >
                   {skill}
                 </li>

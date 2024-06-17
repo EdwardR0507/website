@@ -12,10 +12,10 @@ export default async function Projects({
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-blue-500 mb-4">
+      <h1 className="text-3xl font-bold text-blue-500 lg:mb-4">
         {dictionary.PROJECTS.TITLE}
       </h1>
-      <section className="my-4 text-justify text-lg w-full">
+      <section className="my-2 lg:my-4 text-justify text-lg w-full">
         {dictionary.PROJECTS.DESCRIPTION}
         <ul className="flex flex-col gap-3 my-4 text-left">
           <li className="list-disc ml-6">

@@ -16,10 +16,10 @@ export default async function Stack({ params }: { params: { lang: Locale } }) {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-blue-500 mb-4">
+      <h1 className="text-3xl font-bold text-blue-500 lg:mb-4">
         {dictionary.STACK.TITLE}
       </h1>
-      <p className="my-4 text-justify text-lg w-full">
+      <p className="my-2 lg:my-4 text-justify text-lg w-full">
         {dictionary.STACK.DESCRIPTION}
       </p>
       <StackSection
