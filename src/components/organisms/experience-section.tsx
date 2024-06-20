@@ -36,7 +36,7 @@ export const ExperienceSection = ({ dictionary }: ExperienceSectionProps) => {
                     {position}
                     {isCurrent && (
                       <Badge
-                        text="Latest"
+                        text={dictionary.LATEST}
                         className="text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3"
                       />
                     )}
@@ -52,7 +52,7 @@ export const ExperienceSection = ({ dictionary }: ExperienceSectionProps) => {
                     </Link>
                   </h4>
                 </div>
-                <time className="block mb-2 text-sm font-normal leading-none text-white dark:text-white/70">
+                <time className="block mb-2 text-sm font-normal leading-none text-black/70 dark:text-white/70">
                   {startDate} - {endDate}
                 </time>
                 <ul className="pb-4 text-base font-normal text-black-800 dark:text-black-200">

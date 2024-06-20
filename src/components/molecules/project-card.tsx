@@ -74,7 +74,7 @@ export const ProjectCard = ({
                      group-hover:-translate-x-3
                      group-hover:translate-y-3
                      group-hover:-rotate-2
-                     opacity-0 bg-opacity-80 backdrop-blur-sm transition-opacity group-hover:opacity-100"
+                     opacity-0 bg-opacity-80 transition-opacity group-hover:opacity-100"
         >
           <div className="flex gap-4 mt-28 ml-20">
             <ProjectButtons repo={repo} website={website} />

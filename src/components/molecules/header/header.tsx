@@ -47,7 +47,12 @@ export const Header = ({ lang }: { lang: Locale }) => {
   return (
     <header className="relative z-50 top-0 w-full ">
       <div className="w-full h-full flex justify-between items-center p-4">
-        <CustomLink lang={lang} href="/" className="grow-0 text-4xl">
+        <CustomLink
+          lang={lang}
+          href="/"
+          className="grow-0 text-4xl"
+          aria-label="Home page"
+        >
           👋
         </CustomLink>
         <div className="flex grow justify-center gap-6">
@@ -70,7 +75,13 @@ export const Header = ({ lang }: { lang: Locale }) => {
                 {theme === "dark" ? <LightMode /> : <DarkMode />}
               </i>
             </div>
-            <Link href={getNewHref("en")} passHref replace>
+
+            <Link
+              href={getNewHref("en")}
+              passHref
+              replace
+              aria-label="Change language"
+            >
               <i className="cursor-pointer">
                 <WorldIcon />
               </i>
